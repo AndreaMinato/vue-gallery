@@ -1,15 +1,15 @@
 <template>
-    <div class="flex -mx-1">
-        <div v-for="type in Object.keys(list)"
-             :key="type"
-             class="flex-1">
-            <div v-for="(item, index) in list[type]"
-                 :key="index"
-                 class="p-1 w-full">
-                <slot :item="item"></slot>
-            </div>
-        </div>
+  <div class="flex -mx-1">
+    <div v-for="type in Object.keys(list)"
+         :key="type"
+         class="flex-1">
+      <div v-for="(item, index) in list[type]"
+           :key="index"
+           class="p-1 w-full">
+        <slot :item="item"></slot>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -21,7 +21,8 @@ export default {
       required: true
     },
     width: {
-      required: true
+      required: true,
+      type: Number
     },
     maxColumnWidth: {
       default: 200,
