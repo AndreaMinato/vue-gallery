@@ -1,5 +1,5 @@
 {
-  "name": "vue-gallery",
+  "name": "vue-columns-gallery",
   "version": "0.0.1",
   "description": "An opinionated gallery component based on vueJs",
   "author": "AndreaMinato",
@@ -17,6 +17,15 @@
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/gallery.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/gallery.min.js"
   },
+  "keywords": [
+    "vue-gallery",
+    "vuejs-gallery",
+    "vue",
+    "vuejs",
+    "gallery",
+    "responsive",
+    "vue-component"
+  ],
   "devDependencies": {
     "rollup": "^0.67.1",
     "rollup-plugin-buble": "^0.19.4",
