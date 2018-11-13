@@ -9,7 +9,7 @@
   "module": "dist/gallery.esm.js",
   "unpkg": "dist/gallery.min.js",
   "browser": {
-    "./sfc": "src/gallery.vue"
+    "./sfc": "src/Gallery.vue"
   },
   "scripts": {
     "build": "npm run build:umd & npm run build:es & npm run build:unpkg",

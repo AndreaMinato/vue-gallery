@@ -1,11 +1,10 @@
 <template>
-  <div class="flex -mx-1">
+  <div class="flex">
     <div v-for="type in Object.keys(list)"
          :key="type"
          class="flex-1">
       <div v-for="(item, index) in list[type]"
-           :key="index"
-           class="p-1 w-full">
+           :key="index">
         <slot :item="item"></slot>
       </div>
     </div>
@@ -14,7 +13,7 @@
 
 <script>
 export default {
-  name: "Gallery",
+  name: "VueColumnsGallery",
 
   props: {
     items: {

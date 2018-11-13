@@ -5,7 +5,7 @@ import component from "./Gallery.vue";
 export function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component("gallery", component);
+  Vue.component("vue-columns-gallery", component);
 }
 
 // Create module definition for Vue.use()

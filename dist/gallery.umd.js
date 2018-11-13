@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (factory((global.Gallery = {})));
+  (factory((global.VueColumnsGallery = {})));
 }(this, (function (exports) { 'use strict';
 
   //
@@ -17,17 +17,17 @@
   //
   //
   //
-  //
 
   var script = {
-    name: "Gallery",
+    name: "VueColumnsGallery",
 
     props: {
       items: {
         required: true
       },
       width: {
-        required: true
+        required: true,
+        type: Number
       },
       maxColumnWidth: {
         default: 200,
@@ -62,7 +62,7 @@
     var _c = _vm._self._c || _h;
     return _c(
       "div",
-      { staticClass: "flex -mx-1" },
+      { staticClass: "flex" },
       _vm._l(Object.keys(_vm.list), function(type) {
         return _c(
           "div",
@@ -70,7 +70,7 @@
           _vm._l(_vm.list[type], function(item, index) {
             return _c(
               "div",
-              { key: index, staticClass: "p-1 w-full" },
+              { key: index },
               [_vm._t("default", null, { item: item })],
               2
             )
@@ -136,7 +136,7 @@
   function install(Vue) {
     if (install.installed) { return; }
     install.installed = true;
-    Vue.component("gallery", component);
+    Vue.component("vue-columns-gallery", component);
   }
 
   // Create module definition for Vue.use()

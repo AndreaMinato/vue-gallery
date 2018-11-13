@@ -1,4 +1,4 @@
-# vue-gallery
+# vue-columns-gallery
 
 An opinionated gallery component based on vueJS
 
@@ -13,13 +13,13 @@ This component will provide you an [unsplash gallery like style](https://unsplas
 You can install the package from `npm`
 
 ```bash
-npm i vue-gallery --save
+npm i vue-columns-gallery --save
 ```
 
 or from `cdn`
 
 ```html
-<script src="https://unpkg.com/vu-gallery"></script>
+<script src="https://unpkg.com/vue-columns-gallery"></script>
 ```
 
 ### Usage
@@ -27,14 +27,14 @@ or from `cdn`
 Register the component globally:
 
 ```js
-import Gallery from "vue-gallery";
+import Gallery from "vue-columns-gallery";
 Vue.component("gallery", Gallery);
 ```
 
 or locally
 
 ```js
-import Gallery from "vue-gallery";
+import Gallery from "vue-columns-gallery";
 //...
 
 export default {

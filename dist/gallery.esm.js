@@ -11,17 +11,17 @@
 //
 //
 //
-//
 
 var script = {
-  name: "Gallery",
+  name: "VueColumnsGallery",
 
   props: {
     items: {
       required: true
     },
     width: {
-      required: true
+      required: true,
+      type: Number
     },
     maxColumnWidth: {
       default: 200,
@@ -56,7 +56,7 @@ var __vue_render__ = function() {
   var _c = _vm._self._c || _h;
   return _c(
     "div",
-    { staticClass: "flex -mx-1" },
+    { staticClass: "flex" },
     _vm._l(Object.keys(_vm.list), function(type) {
       return _c(
         "div",
@@ -64,7 +64,7 @@ var __vue_render__ = function() {
         _vm._l(_vm.list[type], function(item, index) {
           return _c(
             "div",
-            { key: index, staticClass: "p-1 w-full" },
+            { key: index },
             [_vm._t("default", null, { item: item })],
             2
           )
@@ -130,7 +130,7 @@ __vue_render__._withStripped = true;
 function install(Vue) {
   if (install.installed) { return; }
   install.installed = true;
-  Vue.component("gallery", component);
+  Vue.component("vue-columns-gallery", component);
 }
 
 // Create module definition for Vue.use()
